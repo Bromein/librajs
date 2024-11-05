@@ -1,5 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.navbar, .footer {
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;    
+    color:#f7f7f7;
+}
+.navbar {
+    width: 100vw;
+    height: 7vh;
+    font-size: 2rem;
+    border-bottom: .15vh solid black;
+    
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    fleX: 1;
+    flex: 1;
+    width: 100vw;
+    height: 89.7vh;
+    background-color: #f8eee6;
+}
+
+
+.add-book {
+    width: 25vw;
+    background-color: #faf0e6;
+    /* background-color: red; test */
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.add-book > span {
+    /* flex: 1; */
+    margin: 25px;
+    padding: 5px;
+}
+
+.add-book > button {
+    max-width: 7rem;
+    height: 2.5rem;
+    
+}
+
+.add-book > input {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+
+.library {
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.library > .card {
+    background-color: #202020;
+    max-width: 30%;
+    max-height: 30%;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 20px;
+    border-radius: 1%;
+    color: #f7f7f7
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    border-top: .15vh solid black;
+    height: 3vh;
+    width: 100vw;
 }
